@@ -1,0 +1,64 @@
+.rectangle {
+    background-color: sandybrown;
+    height: 200px;
+    width: 100%;
+}
+
+.rectangleCyan {
+    background-color: cyan;
+
+
+}
+
+.rectangleSalmon {
+    background-color: salmon;
+
+
+}
+
+#navbarColores {
+
+    background-color: rgba(0, 129, 167, 0.0);
+}
+
+#fontHeliumBrand {
+    /*Font-Family: 'Old Standard TT', Serif; */
+    Font-Family: 'Raleway', Sans-Serif;
+    Font-Size: 40px;
+    color: #FDFCDC;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.flex-container{
+    display: flex;
+    padding: 10px;
+}
+
+#fondoBody{
+    background-size: 100%;
+    background-image: url(../background/pexels.jpg);
+    padding-top: calc(var(--alturaDelNavbar) + 100px);
+    padding-bottom: 100px   ;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FDFCDC;
+    /*Font-Family: 'Rubik', Sans-Serif;*/
+    Font-Family: 'Open Sans', Sans-Serif;
+    Font-Size: 20px;
+}
+
+:root{
+    --alturaDelNavbar: 71px;
+    --alturaDelNavbarCompensada:165px;
+    --alturaDelNavbarDelJumbotronInicial: 500px;
+}
+
+.lead{
+        margin-top: 0px;
+        margin-bottom: 0px;
+}
