@@ -21,6 +21,14 @@
     background-color: rgba(0, 129, 167, 0.0);
 }
 
+.navbarColoresFondo{
+    background-color: rgba(0, 129, 167, 0.0);
+}
+
+.navbarColoresFondo.scrolled{
+    background-color: #00AFB9;
+}
+
 #fontHeliumBrand {
     /*Font-Family: 'Old Standard TT', Serif; */
     Font-Family: 'Raleway', Sans-Serif;
