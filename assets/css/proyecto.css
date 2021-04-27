@@ -39,7 +39,7 @@
     padding: 10px;
 }
 
-#fondoBody{
+#fondoBodyQueEraDelJumbotron{
     background-size: cover;
     background-image: url(../background/pexels.jpg);
     padding-top: calc(var(--alturaDelNavbar) + 100px);
@@ -62,4 +62,33 @@
 .lead{
         margin-top: 0px;
         margin-bottom: 0px;
+}
+
+/* slider */
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+
+}
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #5e2a26;
+    opacity: 0.7;
+}
+
+.carousel.caption{
+    bottom: 180;
+    padding-left: 100px;
+    padding-right: 100px;
 }
