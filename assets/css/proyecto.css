@@ -108,9 +108,15 @@
     margin-top: 30px;
 }
 .slider-btn .btn{
-    background-color: #00AFB9;
+    background-color: #00666b;
     border-radius: 0;
-    columns: white;
+    color: white;
     padding: 1.5rem 2rem;
     font-size: 1rem;
+    margin-right: 15px;
+}
+
+.slider-btn .btn-2{
+    color: #00666b;
+    background-color: white;
 }
