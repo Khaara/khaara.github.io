@@ -40,10 +40,10 @@
 }
 
 #fondoBody{
-    background-size: 100%;
+    background-size: cover;
     background-image: url(../background/pexels.jpg);
     padding-top: calc(var(--alturaDelNavbar) + 100px);
-    padding-bottom: 100px   ;
+    padding-bottom: 100px;
 }
 
 .navbar-light .navbar-nav .nav-link {
