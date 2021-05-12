@@ -143,3 +143,20 @@
 .margen-top-50px{
     margin-top: 50px;
 }
+
+.cartitas-wrapper .card{
+    border: none;
+}
+
+.cartitasbtn .btn{
+    width: 12rem;
+    height: 5rem;
+    background-color: transparent;
+    color: black;
+    border-color: rgba(128, 128, 128, 0.30);
+    border-width: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
