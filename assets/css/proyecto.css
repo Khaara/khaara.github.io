@@ -126,3 +126,20 @@
 .cover{
     object-fit: cover;
 }
+
+.justify-content-center {
+    justify-content: center;
+  }
+
+.segunda-division-pagina h1{
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.margen-top-200px{
+    margin-top: 200px;
+}
+
+.margen-top-50px{
+    margin-top: 50px;
+}
