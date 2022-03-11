@@ -139,6 +139,11 @@
     font-weight: 200;
 }
 
+.second-section h1{
+    font-size: 50px;
+    font-weight: 200;
+}
+
 .margen-top-200px{
     margin-top: 200px;
 }
@@ -171,3 +176,7 @@ padding-left-50px{
     padding-left: 50px;
 }
 
+.spacer{
+    margin-bottom: 12rem;
+    margin-top: 12rem;
+}
