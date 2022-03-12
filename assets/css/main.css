@@ -176,7 +176,20 @@ padding-left-50px{
     padding-left: 50px;
 }
 
-.spacer{
-    margin-bottom: 12rem;
-    margin-top: 12rem;
+.spacer-12rem{
+    padding-bottom: 25%;
+ 
+    display: flex;
+}
+
+.spacer-6rem{
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    display: flex;
+}
+
+.second-section{
+    background-color: black;
+    margin-left: 0rem;
+    margin-right: 0rem;
 }
