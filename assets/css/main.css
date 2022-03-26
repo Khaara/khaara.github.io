@@ -16,7 +16,7 @@
 
 }
 
-#navbar-wrapper {
+#navbarWrapper {
 
     background-color: rgba(0, 129, 167, 0.0);
 }
@@ -30,7 +30,7 @@
 }
 
 
-#fontHeliumBrand {
+#fontHeliumBrand{
     /*Font-Family: 'Old Standard TT', Serif; */
     Font-Family: 'Raleway', Sans-Serif;
     Font-Size: 40px;

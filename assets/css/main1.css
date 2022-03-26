@@ -1,22 +1,4 @@
-.rectangle {
-    background-color: sandybrown;
-    height: 200px;
-    width: 100%;
-}
-
-.rectangleCyan {
-    background-color: cyan;
-
-
-}
-
-.rectangleSalmon {
-    background-color: salmon;
-
-
-}
-
-#navbar-wrapper {
+#navbarWrapper {
 
     background-color: rgba(0, 129, 167, 0.0);
 }
@@ -31,6 +13,15 @@
 .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background:  no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    object-fit: cover;
 }
 
 .spacer{
