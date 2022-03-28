@@ -1,7 +1,10 @@
+
+
+
 /*$(window).scroll(function(){
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);
 });
-
+document.querySelector(li).
 
 $(window).on("scroll", function(){
     if($(window).scrollTop()){
