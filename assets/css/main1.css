@@ -80,6 +80,8 @@
 .carousel-section #carouselCaptions .carousel-inner .carousel-item .carousel-caption{
     align-items: center;
     justify-content: flex-start;
+    text-align: center;
+    display: flex;
 }
 
 /*experimental spacer*/
