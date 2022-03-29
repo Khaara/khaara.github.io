@@ -1,5 +1,18 @@
 /* || Typography */
 
+/*carousel item typography*/
+
+.carousel-caption h5{
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.carousel-caption p{
+    font-size: 18px;
+    top: 2rem;
+}
+
+
 /* Hydrogen Title typography*/
 
 #fontHeliumBrand {
@@ -55,12 +68,15 @@
 /*carousel size and background image settings*/
 .carousel-item{
     height: 100vh;
-    min-height: 300px;
+    min-height: 450px;
     background:  no-repeat scroll center scroll;
     -webkit-background-size: cover;
     background-size: cover;
     object-fit: cover;
 }
+
+/*carousel caption centering*/
+
 
 /*experimental spacer*/
 .spacer{
