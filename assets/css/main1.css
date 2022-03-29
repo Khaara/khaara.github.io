@@ -77,6 +77,10 @@
 
 /*carousel caption centering*/
 
+.carousel-section #carouselCaptions .carousel-inner .carousel-item .carousel-caption{
+    align-items: center;
+    justify-content: flex-start;
+}
 
 /*experimental spacer*/
 .spacer{
