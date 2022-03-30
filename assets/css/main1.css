@@ -3,7 +3,7 @@
 /*carousel item typography*/
 
 .carousel-caption h5{
-    font-size: 6rem;
+    font-size: 12vw;
     font-weight: 700;
 }
 
@@ -95,6 +95,11 @@
     justify-content: flex-start;
     text-align: center;
     display: flex;
+}
+
+#carouselCaptions{
+    display: grid;
+    
 }
 
 /*experimental spacer*/
