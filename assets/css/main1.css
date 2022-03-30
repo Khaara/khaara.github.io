@@ -37,6 +37,19 @@
     background-color: rgba(0, 129, 167, 0.0);
 }
 
+
+/*navbar background*/
+
+#navbarBackground{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-left:5vw;
+    margin-right: 5vw;
+}
+
+
 /*texto expecifico del navlink*/
 
 .navbar-expand-lg .navbar-nav .nav-link {
