@@ -3,13 +3,16 @@
 /*carousel item typography*/
 
 .carousel-caption h5{
-    font-size: 12vw;
+    font-size: 6vw;
     font-weight: 700;
+    display: flex;
+    text-align: center;
+
 }
 
 .carousel-caption p{
     font-size: 18px;
-    top: 2rem;
+    top: 2vw;
 }
 
 
@@ -92,15 +95,17 @@
 
 .carousel-section #carouselCaptions .carousel-inner .carousel-item .carousel-caption{
     align-items: center;
-    justify-content: flex-start;
+    justify-content:center;
     text-align: center;
     display: flex;
+    bottom: 0;
+    top: 0;
+
 }
 
-#carouselCaptions{
-    display: grid;
-    
-}
+
+
+
 
 /*experimental spacer*/
 .spacer{
