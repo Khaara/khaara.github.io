@@ -44,12 +44,71 @@
 /*navbar background*/
 
 #navbarBackground{
-    justify-content: space-between;
+
     align-items: center;
     flex-wrap: nowrap;
     display: flex;
-    margin-left:5vw;
-    margin-right: 5vw;
+    margin-left:3vw;
+    margin-right: 3vw;
+    position: relative;
+}
+
+#navbarBrand{
+    position: absolute;
+}
+
+#navbarMenu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#navbarBackground .navbar-toggler{
+    position: relative;
+}
+.social-media-icons li{ 
+width: 3rem;
+height: 3rem;
+display: inline-flex;
+
+}
+.social-media-icons li button{ 
+    width: 3rem;
+    height: 3rem;
+    
+    
+    }
+
+.media-button-github{
+
+background-image:url("https://img.icons8.com/color/48/000000/github--v1.png");
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+transition: .45s ease-in;
+animation-duration: 1.6s;
+margin: 0;
+padding: 0;
+border-radius: 50%;
+border: 0;
+
+}
+
+.media-button-fiverr{
+    background-image:url("https://img.icons8.com/color/48/000000/fiverr.png");
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .45s ease-in;
+    animation-duration: 1.6s;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: 0;
 }
 
 

@@ -19,11 +19,13 @@
     <div class="nav-container">
       <nav class="navbar navbar-expand-lg navbar-light navbar fixed-top" id="navbarWrapper">
         <div class="container-fluid" id="navbarBackground">
-          <a class="navbar-brand" href="#" id="fontHeliumBrand">
-            <img src="assets/brand/heliumIcon.ico" alt="" width="54" height="54"
-              class="d-inline-flex align-text-center" />
-            Hydrogen
-          </a>
+          <div class="navbar-brand-flex-container d-flex" id="navbarBrand ">
+            <a class="navbar-brand" href="#" id="fontHeliumBrand">
+              <img src="assets/brand/heliumIcon.ico" alt="" width="54" height="54"
+                class="d-inline-flex align-text-center" />
+              Hydrogen
+            </a>
+          </div>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
             aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,11 +35,7 @@
           <div class="flex-row-reverse collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav mb-lg-0 ml-auto">
               <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">Services</a>
               </li>
 
               <li class="nav-item">
@@ -45,7 +43,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
+                <a href="#" class="nav-link">Projects</a>
               </li>
 
               <li class="nav-item">
@@ -53,10 +51,24 @@
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">Pages</a>
+                <a href="#" class="nav-link text-nowrap">Contact</a>
               </li>
+
             </ul>
           </div>
+
+          <ul class="social-media-icons">
+            <li>
+              <a href="https://github.com/Khaara">
+                <button type="button" class="media-button-github"></button>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.fiverr.com/heliumdev">
+                <button type="button" class="media-button-fiverr"></button>
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
@@ -90,7 +102,7 @@
 
         </div>
 
-        <!--second carousel element-->
+        <!--second carousel element-->+
 
         <div class="carousel-item">
           <img src="assets/background/backgroundPinkCloud.jpg" class="cover" alt="Responsive image">
