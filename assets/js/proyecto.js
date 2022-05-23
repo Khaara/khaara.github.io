@@ -1,3 +1,20 @@
+function changeNavbarMenuPositionAttribute(){
+  var navbarTogglerObject =document.getElementById("navbar-toggler");
+  console.log("probando");
+  var navbarObject = document.getElementById("navbarMenu");
+  console.log(navbarObject)
+
+  if(!navbarTogglerObject.classList.contains("collapsed")){
+    navbarObject.style.position = "static";
+
+  }else{
+    navbarObject.style.position = "absolute";
+  }
+
+}
+
+window.onresize = changeNavbarMenuPositionAttribute;
+
 
 
 
