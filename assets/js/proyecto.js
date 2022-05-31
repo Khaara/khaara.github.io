@@ -1,14 +1,19 @@
+var navbarTogglerObject = document.getElementById("navbarToggler");
+
 function changeNavbarMenuPositionAttribute(){
-  var navbarTogglerObject =document.getElementById("navbar-toggler");
+  
   console.log("probando");
-  var navbarObject = document.getElementById("navbarMenu");
-  console.log(navbarObject)
+  var navbarMenuObject = document.getElementById("navbarMenu");
+  console.log(navbarMenuObject);
+  console.log(navbarTogglerObject);
+  var seeIfContainsCollapsedClass = navbarTogglerObject.classList.contains("collapsed");
+  console.log(seeIfContainsCollapsedClass);
 
   if(!navbarTogglerObject.classList.contains("collapsed")){
-    navbarObject.style.position = "static";
+    navbarMenuObject.style.position = "absolute";
 
   }else{
-    navbarObject.style.position = "absolute";
+    navbarMenuObject.style.position = "initial";
   }
 
 }
