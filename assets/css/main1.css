@@ -7,7 +7,6 @@
     font-weight: 700;
     display: flex;
     text-align: center;
-
 }
 
 .carousel-caption p{
@@ -17,57 +16,22 @@
 
 
 /* Hydrogen Title typography*/
-
 #fontHeliumBrand {
-    /*Font-Family: 'Old Standard TT', Serif; */
     Font-Family: 'Raleway', Sans-Serif;
-    Font-Size: 40px;
+/*    Font-Size: 40px; --> what changes the centering of menu elements, is the font size of the brand, ill test that later */
     color: #097ED1;
 }
 
 /* Navlinks text fonts and color*/
 .navbar-light .navbar-nav .nav-link {
     color: #097ED1;
-    /*Font-Family: 'Rubik', Sans-Serif;*/
-    /*Font-Family: 'Open Sans', Sans-Serif;*/
-    /*Font-Size: 20px;*/
 }
 
 /* || Navbar */
-
 #navbarWrapper {
-
     background-color: rgba(0, 129, 167, 0.0);
 }
 
-
-/*navbar background*/
-
-#navbarBackground{
-
-    align-items: center;
-    flex-wrap: nowrap;
-    display: flex;
-    margin-left:3vw;
-    margin-right: 3vw;
-    position: relative;
-}
-
-#navbarBrand{
-    position: absolute;
-}
-
-#navbarMenu{
-   
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-#navbarBackground .navbar-toggler{
-    position: relative;
-}
 
 /*social-media-icons section*/
 .social-media-icons{
@@ -81,8 +45,7 @@ display: inline-flex;
 .social-media-icons li button{ 
     width: 3rem;
     height: 3rem;
-    }
-
+}
 .media-button-github{
 
 background-image:url("https://img.icons8.com/color/48/000000/github--v1.png");
@@ -99,7 +62,6 @@ border-radius: 50%;
 border: 0;
 
 }
-
 .media-button-fiverr{
     background-image:url("https://img.icons8.com/color/48/000000/fiverr.png");
     background-color: transparent;
@@ -115,26 +77,17 @@ border: 0;
     border: 0;
 }
 
-
 /*texto expecifico del navlink*/
-
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     text-align: center;   
 }
-
 /*elemento contenedor de los navlink*/
 .navbar-expand-lg .navbar-nav li {
     align-items:flex-end !important;
     display: flex;
     overflow: hidden;  
-}
-
-/*centrado de botones en el navbarMenu container*/
-.navbar-expand-lg #navbarMenu{
-    align-items: center;
-    justify-content: center;
 }
 
 /* || Carousel */

@@ -1,0 +1,78 @@
+/*social-media-icons section*/
+.social-media-icons {
+    margin: 0;
+}
+
+.social-media-icons li {
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+}
+
+.social-media-icons li button {
+    width: 3rem;
+    height: 3rem;
+}
+
+.media-button-github {
+
+    background-image: url("https://img.icons8.com/color/48/000000/github--v1.png");
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .45s ease-in;
+    animation-duration: 1.6s;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: 0;
+
+}
+
+.media-button-fiverr {
+    background-image: url("https://img.icons8.com/color/48/000000/fiverr.png");
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .45s ease-in;
+    animation-duration: 1.6s;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: 0;
+}
+
+.nav-link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    transform: translateZ(0);
+
+}
+
+.nav-link ::before {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    /* W3C */
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+}
+
+.nav-link ::hover,
+.nav-link ::active,
+.nav-link ::focus {
+    transform: translateY(-5px);
+}
