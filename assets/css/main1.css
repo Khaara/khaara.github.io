@@ -1,15 +1,75 @@
+/* Variables*/
+:root {
+    --helium-blue: #097ED1;
+
+    --charcoal: #384E61ff;
+    --gunmetal: #1F262Eff;
+    --gunmetal-2: #2B3945ff;
+
+    --eerie-black: #18191Eff;
+    --raisin-black: #15151Bff;
+    --raisin-black-2: #1F252Eff;
+    --rich-black-fogra-39: #101013ff;
+    
+    --golden-brown: #916729ff;
+    --metallic-sunburst: #997D2Fff;
+    --metallic-gold: #d4af37;
+    --satin-sheen-gold: #c9a534ff;
+    --saddle-brown: #893906ff;
+    --yellow-pantone: #FDE12D;
+
+    --brand-color: var(--satin-sheen-gold);
+    --nav-link-color: var(--satin-sheen-gold);
+    --navbarWrapper-background-color: transparent;
+    --sectionNumberOne-background-color: var(--raisin-black);
+}
+/*Basic elements*/
+
+/*Scrollbar*/
+::-webkit-scrollbar{
+	width: 10px;
+}
+::-webkit-scrollbar-track-piece{
+	background-color: #202831;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #17191f;	
+    border-radius: 8px;  
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: var(--charcoal);
+
+}
+
+/*Dot code animation (not touch it yet)*/
+#sectionNumberOne:hover{
+    transition: opacity 1s ease 0.25s
+    , transform 1s cubic-bezier(0.25, 1, 0.5, 1) 0.25s, 
+    -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1) 0.25s;
+}
+
 /* || Typography */
 
 /*carousel item typography*/
 
-.carousel-caption h5{
+.carousel-caption h5 {
     font-size: 6vw;
     font-weight: 700;
     display: flex;
     text-align: center;
 }
 
-.carousel-caption p{
+.carousel-caption h5:hover {
+    color: var(--saddle-brown);
+}
+
+.carousel-section #carouselCaptions .carousel-control-prev .carousel-control-prev-icon {
+    fill: var(--saddle-brown) !important;
+    color: saddlebrown !important;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='saddlebrown'><path%20d='M11.354%201.646a.5.5%200%200%201%200%20.708L5.707%208l5.647%205.646a.5.5%200%200%201-.708.708l-6-6a.5.5%200%200%201%200-.708l6-6a.5.5%200%200%201%20.708%200z'/></svg>");
+}
+
+.carousel-caption p {
     font-size: 18px;
     top: 2vw;
 }
@@ -18,52 +78,50 @@
 /* Hydrogen Title typography*/
 #fontHeliumBrand {
     Font-Family: 'Raleway', Sans-Serif;
-/*    Font-Size: 40px; --> what changes the centering of menu elements, is the font size of the brand, ill test that later */
-    color: #097ED1;
+    /*    Font-Size: 40px; --> what changes the centering of menu elements, is the font size of the brand, ill test that later */
+    color: var(--brand-color);
 }
-
 /* Navlinks text fonts and color*/
 .navbar-light .navbar-nav .nav-link {
-    color: #097ED1;
+    color: var(--nav-link-color);
 }
-
 /* || Navbar */
 #navbarWrapper {
-    background-color: rgba(0, 129, 167, 0.0);
+    background-color: var(--navbarWrapper-background-color);
 }
 
 
 /*social-media-icons section*/
-.social-media-icons{
+.social-media-icons {
     margin: 0;
 }
-.social-media-icons li{ 
-width: 3rem;
-height: 3rem;
-display: inline-flex;
+.social-media-icons li {
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
 }
-.social-media-icons li button{ 
+.social-media-icons li button {
     width: 3rem;
     height: 3rem;
 }
-.media-button-github{
+.media-button-github {
 
-background-image:url("https://img.icons8.com/color/48/000000/github--v1.png");
-background-color: transparent;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-transition: .45s ease-in;
-animation-duration: 1.6s;
-margin: 0;
-padding: 0;
-border-radius: 50%;
-border: 0;
+    background-image: url("https://img.icons8.com/color/48/000000/github--v1.png");
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .45s ease-in;
+    animation-duration: 1.6s;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: 0;
 
 }
-.media-button-fiverr{
-    background-image:url("https://img.icons8.com/color/48/000000/fiverr.png");
+.media-button-fiverr {
+    background-image: url("https://img.icons8.com/color/48/000000/fiverr.png");
     background-color: transparent;
     display: flex;
     flex-direction: row;
@@ -81,22 +139,45 @@ border: 0;
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-    text-align: center;   
+    text-align: center;
 }
+
 /*elemento contenedor de los navlink*/
 .navbar-expand-lg .navbar-nav li {
-    align-items:flex-end !important;
+    align-items: flex-end !important;
     display: flex;
-    overflow: hidden;  
+    overflow: hidden;
 }
+
+
+/*Avrana Section*/
+
+#Avrana{
+    height: 100vh;
+    min-height: 450px;
+    background-color: var(--raisin-black);
+}
+/* || SECTION NUMBER ONE */
+#sectionNumberOne{
+    height: 100vh;
+    min-height: 450px;
+    background-color: var(--sectionNumberOne-background-color);
+}
+
+#second-section{
+    height: 100vh;
+    min-height: 450px;
+}
+
+
 
 /* || Carousel */
 
 /*carousel size and background image settings*/
-.carousel-item{
+.carousel-item {
     height: 100vh;
     min-height: 450px;
-    background:  no-repeat scroll center scroll;
+    background: no-repeat scroll center scroll;
     -webkit-background-size: cover;
     background-size: cover;
     object-fit: cover;
@@ -104,9 +185,9 @@ border: 0;
 
 /*carousel caption centering*/
 
-.carousel-section #carouselCaptions .carousel-inner .carousel-item .carousel-caption{
+.carousel-section #carouselCaptions .carousel-inner .carousel-item .carousel-caption {
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     text-align: center;
     display: flex;
     bottom: 0;
@@ -115,7 +196,7 @@ border: 0;
 
 
 /*experimental spacer*/
-.spacer{
+.spacer {
     margin-bottom: 15vh;
     margin-top: 15vh;
 }
