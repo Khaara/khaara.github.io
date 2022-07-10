@@ -20,6 +20,7 @@
 
     --brand-color: var(--satin-sheen-gold);
     --nav-link-color: var(--satin-sheen-gold);
+    --nav-link-hover-color:var(#39AAFF);
     --navbarWrapper-background-color: transparent;
     --sectionNumberOne-background-color: var(--raisin-black);
 }
@@ -51,7 +52,6 @@
 /* || Typography */
 
 /*carousel item typography*/
-
 .carousel-caption h5 {
     font-size: 6vw;
     font-weight: 700;
@@ -84,7 +84,25 @@
 /* Navlinks text fonts and color*/
 .navbar-light .navbar-nav .nav-link {
     color: var(--nav-link-color);
+    transition: 0.4s;
 }
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--nav-link-hover-color);
+}
+
+.navbar-light .navbar-nav .nav-link::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% - 0.22em);
+        bottom: 0px;
+        border-bottom: 0.1rem solid;
+        transform: scaleX(1);
+        opacity: 1;
+        transition: opacity 0.3s ease 0s, transform 0.3s ease-out 0s;
+    }
+
+
 /* || Navbar */
 #navbarWrapper {
     background-color: var(--navbarWrapper-background-color);
@@ -152,21 +170,27 @@
 
 /*Avrana Section*/
 
-#Avrana{
+#first-section{
     height: 100vh;
     min-height: 450px;
     background-color: var(--raisin-black);
 }
 /* || SECTION NUMBER ONE */
-#sectionNumberOne{
+#second-section{
     height: 100vh;
     min-height: 450px;
     background-color: var(--sectionNumberOne-background-color);
 }
 
-#second-section{
+#third-section{
     height: 100vh;
     min-height: 450px;
+}
+
+#fourth-section{
+    height: 100vh;
+    min-height: 450px;
+    background-color: var(--raisin-black-2);
 }
 
 
