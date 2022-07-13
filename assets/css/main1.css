@@ -36,6 +36,7 @@
 ::-webkit-scrollbar-thumb{
 	background-color: #17191f;	
     border-radius: 8px;  
+    transition: 0.3s;
 }
 ::-webkit-scrollbar-thumb:hover{
 	background-color: var(--charcoal);
@@ -84,30 +85,57 @@
 /* Navlinks text fonts and color*/
 .navbar-light .navbar-nav .nav-link {
     color: var(--nav-link-color);
-    transition: 0.4s;
-}
-.navbar-light .navbar-nav .nav-link:hover {
-    color: var(--nav-link-hover-color);
+    transition: .5s;
+    text-transform: capitalize;
+    display: flex;
+    position: relative;
+    text-decoration: none;
 }
 
 .navbar-light .navbar-nav .nav-link::before{
-        content: "";
-        display: block;
-        position: absolute;
-        width: calc(100% - 0.22em);
-        bottom: 0px;
-        border-bottom: 0.1rem solid;
-        transform: scaleX(1);
-        opacity: 1;
-        transition: opacity 0.3s ease 0s, transform 0.3s ease-out 0s;
-    }
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background: var(--satin-sheen-gold);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-sizing: border-box;
+}
+
+.navbar-light .navbar-nav .nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background: var(--satin-sheen-gold);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before{
+    right: 0;
+    
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after{
+    left: 0;
+}
+
+
 
 
 /* || Navbar */
 #navbarWrapper {
     background-color: var(--navbarWrapper-background-color);
 }
-
 
 /*social-media-icons section*/
 .social-media-icons {
@@ -167,15 +195,14 @@
     overflow: hidden;
 }
 
-
-/*Avrana Section*/
+/*MAIN SECTIONS*/
 
 #first-section{
     height: 100vh;
     min-height: 450px;
     background-color: var(--raisin-black);
 }
-/* || SECTION NUMBER ONE */
+
 #second-section{
     height: 100vh;
     min-height: 450px;
@@ -192,8 +219,6 @@
     min-height: 450px;
     background-color: var(--raisin-black-2);
 }
-
-
 
 /* || Carousel */
 
@@ -217,7 +242,6 @@
     bottom: 0;
     top: 0;
 }
-
 
 /*experimental spacer*/
 .spacer {
