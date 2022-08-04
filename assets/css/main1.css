@@ -100,7 +100,7 @@
 }
 
 .navbar-light .navbar-nav .nav-item .nav-item-container{
-width: 20%;
+width: 50%;
     flex-direction: column;
 display: flex;
     justify-content: center;
