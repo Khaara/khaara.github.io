@@ -92,15 +92,21 @@
     text-decoration: none;
     overflow: hidden;
     box-sizing: content-box;
+
+}
+.navbar-light .navbar-nav .nav-item{
+
+    position: relative;
 }
 
-
 .navbar-light .navbar-nav .nav-item .nav-item-container{
-    width: 50%;
-    display: flex;
+width: 20%;
+    flex-direction: column;
+display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 1;
 
 }
 .navbar-light .navbar-nav .nav-link::before{
