@@ -26,6 +26,28 @@
 }
 /*Basic elements*/
 
+.absolute-center {
+
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
 /*Scrollbar*/
 ::-webkit-scrollbar{
 	width: 10px;
@@ -91,23 +113,26 @@
     position: relative;
     text-decoration: none;
     overflow: hidden;
-    box-sizing: content-box;
-
-}
-.navbar-light .navbar-nav .nav-item{
-
-    position: relative;
-}
-
-.navbar-light .navbar-nav .nav-item .nav-item-container{
-width: 50%;
-    flex-direction: column;
-display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
+ /*   box-sizing: content-box;*/
 
+ /*for testing*/
+
+
+}
+
+.navbar-light .navbar-nav .nav-item{
+    position: relative;
+    justify-content: center;
+}
+.navbar-light .navbar-nav .nav-item .nav-item-container{
+width: 60%;
+align-items: center;
+justify-content: center;
+justify-items: center;
+align-content: center;
+background-color: rgba(219, 146, 91, 0.4);
+overflow: visible;
 }
 .navbar-light .navbar-nav .nav-link::before{
     content: '';
@@ -118,7 +143,7 @@ display: flex;
     height: 2px;
     background: var(--satin-sheen-gold);
     transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    box-sizing: content-box;
+
 
 }
 
