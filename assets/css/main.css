@@ -3,6 +3,8 @@
     --brand-color:var(--satin-sheen-gold);
     --eerie-black: #18191Eff;
     --eerie-black-semitransparent: rgba(23, 25, 31, 0.5);
+    --cultured: #F3F3F3;
+    --rufous:#A50104;
 
 }
 html{
@@ -14,6 +16,51 @@ html{
     /*    Font-Size: 40px; --> what changes the centering of menu elements, is the font size of the brand, ill test that later */
     color: var(--brand-color);
     font-size: 2.5rem;
+}
+
+#first-section{
+    background-color: var(--eerie-black);
+    height: 100vh;
+}
+
+/* || Carousel */
+
+/*carousel size and background image settings*/
+.carousel-item {
+  height: 100vh;
+  min-height: 450px;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+  object-fit: cover;
+}
+
+/*carousel caption centering*/
+
+.carousel-section #carouselCaptions .carousel-inner .carousel-item .carousel-caption {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  bottom: 0;
+  top: 0;
+}
+
+#second-section{
+  background-color: #17191f;
+}
+
+#third-section{
+  height: 100vh;
+}
+
+#fourth-section{
+  height: 100vh;
+}
+
+.spacer {
+  margin-bottom: 15vh;
+  margin-top: 15vh;
 }
 
 .social-media-icons {
